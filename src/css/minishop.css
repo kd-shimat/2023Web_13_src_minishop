@@ -1,0 +1,65 @@
+/* テーブルの枠線を灰色の1pxの直線とし、1本にまとめる */
+table, th, td {
+  border: 1px solid #C0C0C0;
+  border-collapse: collapse;
+}
+
+/* セル内の上下の余白を3px、左右の余白を10pxに */
+th, td {
+  padding: 3px 10px 3px 10px;
+}
+
+/* セル内のデータを右詰め表示 */
+.td_right {
+  text-align: right;
+}
+
+/* セル内のデータをセンター表示 */
+.td_center {
+  text-align: center;
+}
+
+/* 商品のセルの幅を200pxとし、収まりきらない場合は折り返して表示する */
+.td_item_name {
+  width: 200px;
+  word-break: break-all;
+}
+
+/* makerのセルの幅を150pxとし、収まりきらない場合は折り返して表示する */
+.td_item_maker {
+  width: 150px;
+  word-break: break-all;
+}
+
+/* 画像データを縮小して表示 */
+.td_mini_img{
+  padding: 2px 1px 0;
+  width: 40px;
+  height: 40px;
+}
+/* 画像の大きさをセルのサイズにする */
+img.mini_img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 画像データのサイズを60%に ・・ detail.phpで使用*/
+img.detail_img {
+  width: 40%;
+  height: 40%;
+}
+
+/* 数量の入力幅を35pxに ・・ detail.php、cartlist.phpで使用*/
+.quantity_number {
+  width: 35px;
+}
+
+/* 価格のセルの幅を80pxに ・・ orderhistory.phpで使用 */
+.td_item_price {
+  width: 80px;
+}
+
+/* 金額のセルの幅を120pxに ・・ orderhistory.phpで使用 */
+.td_item_total {
+  width: 120px;
+}
